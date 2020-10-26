@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Layui</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="../layui/css/layui.css"  media="all">
+    <!-- 注意：如果你直接复制所有代码到本地，上述css路径需要改成你本地的 -->
+</head>
+<body>
+<!--分成三部分：头、主体、脚部-->
+<!--头和脚本占100%的宽度，主体使用固定大小的容器-->
+<!-- 头部 -->
+<div class="layui-fluid">
+    <div class="layui-row">
+        <img src="../img/top_banner.jpg" width="100%">
+
+
+    </div>
+
+    <div class="layui-row">
+        <div class="layui-col-md3">
+            <div class="grid-demo grid-demo-bg1">
+                <img src="../img/logo.jpg" width="70%">
+            </div>
+        </div>
+        <div class="layui-col-md4">
+            <div class="grid-demo">
+                <input type="text" placeholder="请输入线路" class="search_input">
+                <a href="#" class="search-button"><i class="layui-icon layui-icon-search" style="font-size: 30px; color: #1E9FFF;"></i>  搜 索</a>
+            </div>
+        </div>
+        <div class="layui-col-md3">
+            <div class="grid-demo">
+                <img src="../img/hotel_tel.png" width="70%">
+            </div>
+        </div>
+    </div>
+
+    <div class="layui-row">
+<!--导航条-->
+    <ul class="layui-nav">
+        <li class="layui-nav-item"><a href="">厚朴教育</a></li>
+        <li class="layui-nav-item layui-this">
+            <a href="javascript:;">JavaEE</a>
+        </li>
+        <li class="layui-nav-item"><a href="">Android</a></li>
+        <li class="layui-nav-item">
+            <a href="javascript:;">请选择</a>
+            <dl class="layui-nav-child">
+                <dd><a href="">选项1</a></dd>
+                <dd><a href="">选项2</a></dd>
+                <dd><a href="">选项3</a></dd>
+            </dl>
+        </li>
+
+    </ul>
+    </div>
+
+<!--    轮播图-->
+    <div class="layui-row" >
+        <div class="layui-carousel" id="test1" >
+            <div carousel-item >
+                <div><img src="../img/desc_banner1.jpg"></div>
+                <div><img src="../img/desc_banner2.jpg"></div>
+                <div><img src="../img/desc_banner3.jpg"></div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
+<!-- 主体 -->
+<div class="layui-container">
+    <!--2.1、厚溥精选-->
+    <div class="layui-row">
+        <div class="jx_top">
+            <img src="../img/icon_1.jpg">
+            <span>厚浦精选</span>
+        </div>
+        <!--精选详情-->
+        <div class="layui-row layui-col-space10">
+            <div class="layui-col-md3">
+                <img src="../img/jingxuan.jpg"  width="100%" alt="">
+                <p>上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</p>
+                <span style="color: red">&yen;899</span>
+            </div>
+            <div class="layui-col-md3 ">
+                <img src="../img/jingxuan.jpg"  width="100%" alt="">
+                <p>上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</p>
+                <span style="color: red">&yen;899</span>
+            </div>
+            <div class="layui-col-md3">
+                <img src="../img/jingxuan.jpg"  width="100%" alt="">
+                <p>上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</p>
+                <span style="color: red">&yen;899</span>
+            </div>
+            <div class="layui-col-md3">
+                <img src="../img/jingxuan.jpg"  width="100%" alt="">
+                <p>上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</p>
+                <span style="color: red">&yen;899</span>
+            </div>
+        </div>
+    </div>
+
+    <!--2.2、国内游-->
+    <div class="layui-row">
+        <div class="jx_top">
+            <img src="../img/icon_2.jpg">
+            <span>国内游</span>
+        </div>
+        <!--国内游缩略图-->
+        <!--每成2部分，左边4列，右边8列-->
+        <div class="layui-row">
+            <div class="layui-col-md4">
+                <img src="../img/guonei_big.jpg">
+            </div>
+
+            <div class="layui-col-md8">
+                <!--每个缩略图占4格-->
+                <div class="layui-col-md4">
+                    <!-- 这里只写了一个缩略图，其它的复制即可 -->
+                    <div class="thumbnail">
+                        <!--图片和文字-->
+                        <img src="../img/guonei.jpg">
+                        <div class="caption">
+                            <p>上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</p>
+                            <span style="color: red">网付价: ￥899</span>
+                        </div>
+                    </div>
+
+                </div>
+                <!--每个缩略图占4格-->
+                <div class="layui-col-md4">
+                    <!-- 这里只写了一个缩略图，其它的复制即可 -->
+                    <div class="thumbnail">
+                        <!--图片和文字-->
+                        <img src="../img/guonei.jpg">
+                        <div class="caption">
+                            <p>上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</p>
+                            <span style="color: red">网付价: ￥899</span>
+                        </div>
+                    </div>
+
+                </div>
+                <!--每个缩略图占4格-->
+                <div class="layui-col-md4">
+                    <!-- 这里只写了一个缩略图，其它的复制即可 -->
+                    <div class="thumbnail">
+                        <!--图片和文字-->
+                        <img src="../img/guonei.jpg">
+                        <div class="caption">
+                            <p>上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</p>
+                            <span style="color: red">网付价: ￥899</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!--每个缩略图占4格-->
+                <div class="layui-col-md4">
+                    <!-- 这里只写了一个缩略图，其它的复制即可 -->
+                    <div class="thumbnail">
+                        <!--图片和文字-->
+                        <img src="../img/guonei.jpg">
+                        <div class="caption">
+                            <p>上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</p>
+                            <span style="color: red">网付价: ￥899</span>
+                        </div>
+                    </div>
+
+                </div>
+                <!--每个缩略图占4格-->
+                <div class="layui-col-md4">
+                    <!-- 这里只写了一个缩略图，其它的复制即可 -->
+                    <div class="thumbnail">
+                        <!--图片和文字-->
+                        <img src="../img/guonei.jpg">
+                        <div class="caption">
+                            <p>上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</p>
+                            <span style="color: red">网付价: ￥899</span>
+                        </div>
+                    </div>
+
+                </div>
+                <!--每个缩略图占4格-->
+                <div class="layui-col-md4">
+                    <!-- 这里只写了一个缩略图，其它的复制即可 -->
+                    <div class="thumbnail">
+                        <!--图片和文字-->
+                        <img src="../img/guonei.jpg">
+                        <div class="caption">
+                            <p>上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</p>
+                            <span style="color: red">网付价: ￥899</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--2.3、境外游-->
+    <div class="layui-row">
+        <div class="jx_top">
+            <img src="../img/icon_3.jpg">
+            <span>境外游</span>
+        </div>
+        <!--国内游缩略图-->
+        <!--每成2部分，左边4列，右边8列-->
+        <div class="layui-row">
+            <div class="layui-col-md4">
+                <img src="../img/jingwai_big.jpg">
+            </div>
+
+            <div class="layui-col-md8  layui-col-space10">
+                <!--每个缩略图占4格-->
+                <div class="layui-col-md4">
+                    <!-- 这里只写了一个缩略图，其它的复制即可 -->
+                    <div class="thumbnail">
+                        <!--图片和文字-->
+                        <img src="../img/jingwai.jpg">
+                        <div class="caption">
+                            <p>上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</p>
+                            <span style="color: red">网付价: ￥899</span>
+                        </div>
+                    </div>
+
+                </div>
+                <!--每个缩略图占4格-->
+                <div class="layui-col-md4">
+                    <!-- 这里只写了一个缩略图，其它的复制即可 -->
+                    <div class="thumbnail">
+                        <!--图片和文字-->
+                        <img src="../img/jingwai.jpg">
+                        <div class="caption">
+                            <p>上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</p>
+                            <span style="color: red">网付价: ￥899</span>
+                        </div>
+                    </div>
+
+                </div>
+                <!--每个缩略图占4格-->
+                <div class="layui-col-md4">
+                    <!-- 这里只写了一个缩略图，其它的复制即可 -->
+                    <div class="thumbnail">
+                        <!--图片和文字-->
+                        <img src="../img/jingwai.jpg">
+                        <div class="caption">
+                            <p>上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</p>
+                            <span style="color: red">网付价: ￥899</span>
+                        </div>
+                    </div>
+
+                </div>
+                <!--每个缩略图占4格-->
+                <div class="layui-col-md4">
+                    <!-- 这里只写了一个缩略图，其它的复制即可 -->
+                    <div class="thumbnail">
+                        <!--图片和文字-->
+                        <img src="../img/jingwai.jpg">
+                        <div class="caption">
+                            <p>上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</p>
+                            <span style="color: red">网付价: ￥899</span>
+                        </div>
+                    </div>
+
+                </div>
+                <!--每个缩略图占4格-->
+                <div class="layui-col-md4">
+                    <!-- 这里只写了一个缩略图，其它的复制即可 -->
+                    <div class="thumbnail">
+                        <!--图片和文字-->
+                        <img src="../img/jingwai.jpg">
+                        <div class="caption">
+                            <p>上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</p>
+                            <span style="color: red">网付价: ￥899</span>
+                        </div>
+                    </div>
+
+                </div>
+                <!--每个缩略图占4格-->
+                <div class="layui-col-md4">
+                    <!-- 这里只写了一个缩略图，其它的复制即可 -->
+                    <div class="thumbnail">
+                        <!--图片和文字-->
+                        <img src="../img/jingwai.jpg">
+                        <div class="caption">
+                            <p>上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</p>
+                            <span style="color: red">网付价: ￥899</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 尾部 -->
+<div class="layui-fluid">
+    <div class="layui-row">
+        <img style="width: 100%" src="../img/footer_service.png" alt="">
+    </div>
+    <div class="layui-row">
+        <div class="company">
+            武汉厚浦教育科技股份有限公司 版权所有  Copyright 2006-2020, All Rights Reserved 鄂ICP备11005077号-1
+        </div>
+    </div>
+</div>
+<!-- 引入layui对应的js文件 -->
+<script src="../layui/layui.js"></script>
+<script>
+    layui.use('element', function(){
+        var element = layui.element; //导航的hover效果、二级菜单等功能，需要依赖element模块
+
+        //监听导航点击
+        element.on('nav(demo)', function(elem){
+            //console.log(elem)
+            layer.msg(elem.text());
+        });
+    });
+
+    // 轮播图
+    layui.use('carousel', function(){
+        var carousel = layui.carousel;
+        //建造实例
+        carousel.render({
+            elem: '#test1'
+            ,width: '100%' //设置容器宽度
+            ,arrow: 'always' //始终显示箭头
+            //,anim: 'updown' //切换动画方式
+            ,interval:'500'
+        });
+    });
+
+
+</script>
+</body>
+</html>
